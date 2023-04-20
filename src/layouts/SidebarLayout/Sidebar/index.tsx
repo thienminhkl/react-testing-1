@@ -12,11 +12,10 @@ import {
   Button,
   lighten,
   darken,
-  Tooltip
 } from '@mui/material';
 
 import SidebarMenu from './SidebarMenu';
-import Logo from 'src/components/LogoSign';
+import Logo from 'src/components/Logo';
 
 const SidebarWrapper = styled(Box)(
   ({ theme }) => `
@@ -55,9 +54,8 @@ function Sidebar() {
         }}
       >
         <Scrollbar>
-          <Box mt={3}>
+          <Box>
             <Box
-              mx={2}
               sx={{
                 width: 52
               }}
@@ -79,19 +77,6 @@ function Sidebar() {
             background: theme.colors.alpha.trueWhite[10]
           }}
         />
-        <Box p={2}>
-          <Button
-            href="https://bloomui.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            variant="contained"
-            color="warning"
-            size="small"
-            fullWidth
-          >
-            Upgrade to PRO
-          </Button>
-        </Box>
       </SidebarWrapper>
       <Drawer
         sx={{
